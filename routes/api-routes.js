@@ -5,7 +5,7 @@ const app = require('../app');
 // Read the file on load.
 let notes = JSON.parse(fs.readFileSync('./db/db.json'));
 
-// API route - GET all notes (JSON)
+// API route - GET all notes (JSON).
 app.get("/api/notes", (req, res) => res.json(notes));
 
 // Displays a single note, or returns false.
